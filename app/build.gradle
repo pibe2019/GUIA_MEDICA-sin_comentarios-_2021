@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.application'
+    id "org.sonarqube"
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "guiasalud.estableciemtos.guiamedica"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 4
+        versionName "1.0.0.2"
+        ndkVersion '22.1.7171670'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+sonarqube {
+    properties {
+        property "sonar.projectName", "Guia_medica"
+        property "sonar.projectKey", "Guia_medica"
+        property "sonar.projectVersion", "1.0"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.language", "java"
+        property "sonar.sources", "src/main/java"
+        property "sonar.java.source", "src/main/java"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.login", "admin"
+        property "sonar.password", "pibe"
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'//no actuializar x q pide api 31
+    implementation 'com.google.android.material:material:1.4.0'
+    //implementation 'com.google.android.material:material:1.2.0-alpha02'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'//2.1.1
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'//no actuializar x q pide api 31
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'//no actuializar x q pide api 31
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'com.google.android.gms:play-services-maps:18.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+//para utilizar el json y volley para grabar  ala bd
+    implementation 'com.android.volley:volley:1.2.1'
+    //para darle click a enlaces de textview mumerico, paginasweb, correo
+    implementation 'me.saket:better-link-movement-method:2.2.0'
+    //para dibujar rutas
+    //implementation 'com.google.maps.android:android-maps-utils:0.5+'
+    implementation 'com.google.maps.android:android-maps-utils:2.2.5'
+    //libreria para q muestre imagen desde url de internet
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //expandable textView
+    implementation 'com.github.gifffert:ExpandableTextView:0.1.6'
+    //para poder implementar un gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
+    //dependencia para material design
+    implementation 'com.google.android.material:material:1.5.0-alpha02'//no actuializar x q pide api 31
+    //ayuda con los nulll investigar...........(aun no lo utilizo)
+    implementation 'com.android.support:support-annotations:28.0.0'
+    //detectar fujas de memoria debugImplementation because LeakCanary should only run in debug builds.
+    //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+
+
+}

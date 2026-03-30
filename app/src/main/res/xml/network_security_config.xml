@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">https://guiamedica.xyz/</domain><!-- files.000webhost.com /     http://192.168.0.13   aca va la ip de la pc/ este archico esta dentro de un directorio creado xml -->
+        <domain includeSubdomains="true">https://www.google.com</domain>
+    </domain-config>
+
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -1,0 +1,298 @@
+<resources>
+    <string name="app_name">Guía Médica Trujillo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Guía Médica</string>
+    <string name="nav_header_subtitle">encuentra tu establecimiento de salud</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Salir</string>
+    <!--menu lateral-->
+    <string name="menu_home">Localiza tu Establecimiento</string>
+    <string name="menu_gallery">Busca tu Médico</string>
+    <string name="menu_AdminEstablecimientoWeb">Admin Establecimiento</string>
+    <string name="menu_slideshow">Ayuda</string>
+    <string name="menu_salir">Cerrar</string>
+
+    <!--  -->
+    <string name="sindato">no tiene / no cuenta</string>
+    <string name="sindatoNumero">contac/emerg</string>
+    <string name="nombreTitle">Nombre</string>
+    <string name="tipoTitle">Establecimiento</string>
+    <string name="direccionTitle">Dirección</string>
+
+    <string name="img_pageweb">icono de pagina web</string>
+    <string name="img_facebook">icono de facebook</string>
+    <string name="btn_pagewebEstablecimiento">Página Web</string>
+    <string name="btn_facebookEstablecimiento">Facebook</string>
+
+
+    <string name="numeroAtencionTitle">Atencion</string>
+    <string name="WhatssapTitle">Whatssap</string>
+    <string name="correoTitle">Correo</string>
+    <string name="numEmergenciaTitle">Emergencia</string>
+    <string name="licenciaTitle">Resolucion para funcionamiento</string>
+    <string name="descripcionTitle">Descripcion</string>
+    <string name="especialidades_doctores">Especialidades y Médicos</string>
+    <string name="especialidds_medicas">Especialidades</string>
+    <string name="especialidds_medicas_tipoService">Teleconsulta y presencial</string>
+
+    <!--descripcion -->
+    <string name="describir">imagen referencial de establecimiento de salud</string>
+    <string name="icono_email">imagen referencial de correo</string>
+    <string name="icono_telefono">imagen referencial de telefono</string>
+    <string name="icono_whatssap">imagen referencial de whatssap</string>
+    <string name="icono_mas">imagen referencial de flecha</string>
+    <string name="icon_especialidadd">imagen referencial deacuerdo a la especialidad</string>
+    <!--  -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--descripcion de botones especialidades y doctores en fragmento-->
+    <string name="btn_especialidades">Especialidades</string>
+    <string name="btn_doctores">Médicos</string>
+    <!--xml doctor-->
+    <string name="text_horario">Horario de atencion</string>
+    <string name="text_horariodescricion">descripcion</string>
+    <string name="text_edad">Registro Nacional de Especialista</string>
+    <string name="text_NColegiatura">Nº colegiatura</string>
+    <string name="text_colegioMedico_peru">Colégio Médico del Perú</string>
+    <string name="text_nombre">nombre completo</string>
+    <string name="text_precio">precio</string>
+    <string name="text_tipodeatencion_sub">Descripcion</string>
+    <string name="text_tipodeatencion">descripcion tipo de atencion</string>
+    <string name="text_especialidadDoctor">Especialidad</string>
+    <string name="text_establecient_trabajo">Establecimiento de trabajo</string>
+    <string name="icon_doctor">icono de doctor</string>
+    <string name="text_verificarColegiatura">Verificar</string>
+    <string name="btn_mostrarHorario">Contáctame</string>
+    <string name="btn_ocultarHorario">mostrar menos</string>
+    <string name="img_instagram">icono de instagram</string>
+
+    <!--splasScreem-->
+    <string name="textGuia">Guía</string>
+    <string name="textDe">de</string>
+    <string name="textMedica">Médica</string>
+    <string name="descripcion_imagen_splash">imagen de medico</string>
+
+    <!--dialog personalizado-->
+    <string name="descripcion_imagen_dialog">icono de localizacion fallida</string>
+    <string name="btn_dialog">OK</string>
+    <string name="text_dialog">no hay internet…</string>
+    <!--dialog contactame-->
+    <string name="text_dialog_contactame">Contactame..</string>
+    <string name="text_dialog_nombre_doc">Nombre doc</string>
+    <string name="btn_dialog_cerrar">Cerrar</string>
+
+    <!--nonbre de fragment-->
+    <string name="nombre_fragmen_estableci">Establecimiento</string>
+    <string name="nombre_fragmen_especialiDoc">Mas información</string>
+
+    <!--fragment de especialidds y medicos primera vista covid-19-->
+    <string name="text_19">Covid - 19</string>
+    <string name="text_protegete">Como protegerte y proteger a los demá</string>
+    <string name="text_vacuna">     Vacúnese</string>
+    <string name="img_vacuna">icono vacuna</string>
+
+    <string name="text_mascarilla">Use mascarilla</string>
+    <string name="img_mascarilla">icono mascarilla</string>
+
+    <string name="text_labarse">Lavarse las manos frecuentemente</string>
+    <string name="img_labarse">icono lavarse</string>
+
+    <string name="text_distancia">Mantener una distancia de 1.5 metros</string>
+    <string name="img_distancia">icono distancia</string>
+
+    <string name="text_aglomeraciones">Evite las grandes aglomeraciones y los espacios mal ventilados</string>
+    <string name="img_aglomeraciones">icono aglomeraciones</string>
+
+    <string name="text_limpiar">Limpie y desinfecte</string>
+    <string name="img_limpiar">icono limpiar</string>
+
+    <string name="text_salud">Monitoree su salud todos los días</string>
+    <string name="img_salud">icono salud</string>
+
+    <string name="text_cubrase">Cúbrase la nariz y la boca al toser y estornudar</string>
+    <string name="img_cubrirse">icono cubrirse</string>
+
+
+    <string name="text_vulnerables">Grupos más vulnerables</string>
+    <string name="text_hipertencion">Hipertensión arterial.</string>
+    <string name="text_deabetes">Diabetes.</string>
+    <string name="text_cardiovasculares">Enfermedades cardiovasculares.</string>
+    <string name="text_obesidd">Obesidad.</string>
+    <string name="text_respiratorias">Enfermedades respiratorias crónicas.</string>
+    <string name="text_insuficiencia">Insuficiencia renal crónica.</string>
+    <string name="text_cancer">Cáncer.</string>
+    <string name="text_inmunosupresores">Enfermedades o tratamientos inmunosupresores.</string>
+    <string name="text_mayores">Adultos mayores de 60 años.</string>
+
+    <string name="text_alarma">Signos de alarma</string>
+    <string name="text_faltaaire">Sensación de falta de aire o dificultad para respirar.</string>
+    <string name="text_fiebre">Fiebre mayor a 38º persistente por más de dos días.</string>
+    <string name="text_dolorpecho">Dolor de pecho.</string>
+    <string name="text_labios">Coloración azul de los labios (cianosis).</string>
+    <!--informacion sacada del estado psgina web-->
+    <string name="text_info1">Informacion sacada de la plataforma web del estado peruano (Minsa)</string>
+    <string name="text_info2">https://www.gob.pe/institucion/minsa/campa%C3%B1as/699-conoce-que-es-el-coronavirus-covid-19</string>
+    <!--fragmento buscar doctor-->
+    <string name="sear_view">Ingrese especialidad</string>
+    <string name="check_box_cheBoxTrue_nombre">nombre</string>
+    <string name="check_box_cheBoxTrue_apellido">apelli.</string>
+    <string name="iv_voz">icono de microfono</string>
+    <string name="error_toas_service_mostrarDoc_all">aun no se registran doctores</string>
+    <!--fragmento HELP-->
+    <string name="textView_permisos_uvicacion_subTitle">Permisos De Ubicación</string>
+    <string name="textView_buscar_medicos">Busca a tu médico</string>
+    <string name="textView_buscar_medicos_descripcion">Encuentra a tu médico por especialidad, nombre o apellido con opción de dictado(voz).
+Para poder utilizar el comando de voz, el móvil debe tener micrófono o auriculares con micrófono e internet.</string>
+    <string name="textView_avisos_informacion">Avisos e Información</string>
+    <string name="textView_avisos_informacion_descripcion">La información de los establecimientos de salud respecto a las
+        especialidades y médicos, solo son una muestra cercana al 100 %.<br />
+        El precio de la consulta de cada médico es referencial y varía según el establecimiento, existe la posibilidad
+        de que cada médico maneje su propio precio, ya que pueden trabajar en distintos lugares, así como tener consultorio privado.</string>
+    <string name="textView_permisos_uvicacion">"'Permitir'": para que la aplicación pueda mostrarle su ubicación
+        y así poder dibujar la ruta mas corta, que será desde el punto de su ubicación hasta el establecimiento de
+        salud seleccionado.<br />
+    Usted desidirá cuando activar/desactivar su gps, la aplicacion solo le avisara cuando requiera aquel servicio.</string>
+    <string name="textView_miUbicacion">Mostrará su ubicación.<br />
+        Estará en la parte superior derecha del mapa, cuando haya aceptado los permisos de ubicación.<br />
+        Utilícelo para mostrar su ubicación y corregirla, la ubicación puede fallar cuando se encuentre en edificios,
+        sótanos, cerca a montañas, etc.</string>
+    <string name="textView_permisos_llamada_subTitle">Permisos Para Hacer y Gestionar LLamadas Telefónicas</string>
+    <string name="textView_permisos_llamada">"'Permitir'" el servicio, para poder darle funcionalidad a la opción de
+    llamar a un médico.</string>
+    <string name="textView_marcador_azul">Marcador que representa, establecimientos de salud públicos, tóquelos y
+        en la parte superior aparecerá una ventana con el nombre. Toque la ventana donde aparece el nombre y
+        la aplicación lo llevara a una nueva vista donde podrá acceder a la información del establecimiento,
+        acceder a sus redes sociales o página web si es que lo tienen, así como acceder a sus especialidades,
+        médicos, información de precios y etc.</string>
+    <string name="textView_marcador_turqueza">Marcador que representa establecimientos de salud privados.</string>
+    <string name="textView_contacta_admin_subTitle">Contáctame</string>
+    <string name="textView_admin_correo">Correo:</string>
+    <string name="textView_admin_whatssap">Whatssap:</string>
+    <string name="textView_contacto_admin">Cualquier consulta, recomendación u inconveniente con la aplicación,
+contactar especificando el problema, modelo y versión de Android de su móvil.</string>
+    <string name="textView_alias">Sobrenombre</string>
+    <string name="btn_alias_g">Guardar</string>
+    <string name="btn_alias_m">Modificar</string>
+    <string name="btn_alias_a">Actualizar</string>
+
+    <!--avisos de dialog-->
+    <string name="dialog_general">Problemas Con Internet</string>
+    <!-- DIALOG webView  -->
+    <string name="dialog_webView_important">Tener Encuenta</string>
+    <string name="dialog_webView">Cuando salga de esta ventana, cerrará automáticamente la web de administrador..<br />
+     Se recomienda abrir la web de administrador desde un navegador de escritorio para el control total de los datos</string>
+    <!--avisos de dialog splasScremm-->
+    <string name="dialog_splashScreem">usted no cuenta con internet para el funcionamiento de esta aplicacion,vuelva mas tarde</string>
+    <string name="dialog_splashScreem_permiso_ubicacion">El permiso de ubicación es para que la aplicación
+            muestre un botón en la parte superior derecha de la pantalla; Aquel botón mostrará su ubicación en el mapa, gracias a eso
+            se podrá mostrar la ruta de como llegar al establecimiento de salud seleccionado. De aceptar,
+            la aplicación no tendrá acceso a activar o desactivar su GPS, solamente  avisará cuando se requiera para que usted lo active. \n
+            Si no acepto el permiso de ubicación, valla a ajustes - aplicaciones - guíaMédica: permisos</string>
+
+    <!--avisos de dialog buscar doctor-->
+    <string name="dialog_buscarDoc">no cuenta con internet para acceder a este servicio</string>
+    <string name="dialog_buscarDoc_voz">Hola, a quién deseas buscar..</string>
+    <string name="dialog_buscarDoc_toas">Tú dispositivo no soporta el reconocimiento por voz</string>
+    <string name="dialog_buscarDoc_SearVie_Nom">Ingrese nombre</string>
+    <string name="dialog_buscarDoc_SearVie_Especi">Ingrese especialidad</string>
+    <string name="dialog_buscarDoc_SearVie_Ape">Ingrese apellido</string>
+
+    <!--avisos helpFragment-->
+    <string name="aviso_guardar_nameMarker">Problemas para guardar, comuniquese con el Administrador</string>
+    <string name="aviso_ingrese_nameMarker">Ingrese sobrenombre</string>
+    <string name="aviso_actualizar_nameMarker">Sobrenombre actualizado</string>
+
+    <!--avisos y dialog MapsFragment-->
+    <string name="aviso_toas_activado">GpS activado</string>
+    <string name="aviso_toas_desactivado">GpS desactivado</string>
+    <string name="spiner_cabecera">Mostrar Sin Filtro</string>
+    <string name="aviso_uvicacion_null">Espere unos segundos y vuelva a intentar</string>
+
+    <!--avisos y dialog establecimientoFragment-->
+    <string name="aviso_toas_fb_no">No cuenta con Facebook</string>
+    <string name="aviso_toas_fb_si">Mostrando Facebook</string>
+    <string name="aviso_toas_fb_error">problemas con la dirección de facebook, comuníquese con el Administrador</string>
+    <string name="aviso_toas_web_no">No cuenta con Página web</string>
+    <string name="aviso_toas_web_si">Mostrando Página Web</string>
+    <string name="aviso_toas_web_error">problemas con la dirección web, comuníquese con el Administrador</string>
+    <string name="dialog_imagen_internet_no">necesita Internet para cargar la imagen</string>
+    <string name="dialog_btnflecha_internet_no">no cuenta con Internet para acceder a este servicio</string>
+    <string name="toas_internet_no">No cuenta con internet</string>
+    <string name="toas_confir_copy">Copiado al portapapeles</string>
+
+    <!--services servicio especialidades medicas-->
+    <string name="toas_problem_especialidades">problemas para mostrar especialidades, comuníquese con el administardor</string>
+
+    <!--services servicio establecimiento coordenadas-->
+    <string name="toas_problem_coordenadas">problemas para mostrar establecimientos, comuniquese con el administardor</string>
+    <string name="toas_exepcion_coordenadas">problemas - comuniquese con el administrador</string>
+    <string name="toas_problem_imagen">no se pudo cargar la imagen - comuniquese con el administrador</string>
+    <string name="api">key=AIzaSyAkWoUAfvgpltlSccld6M8w18L8Kc6K-90</string>
+
+    <!-- ESPECIALIDADES Y ESTABLECIMIENTO FRAGMNET -->
+    <string name="transaction_replace_especialidades">especialidadesFrag</string>
+    <string name="transaction_replace_doctores">doctoresFrag</string>
+
+    <!-- SERVICIO ESPECIALIDADES SEGUN ESTABLECIMIENTO -->
+    <string name="toas_problem_o_sinRegistro_especialidades">aun no se an registrado especialidades, si esto persiste comuniquese con el administrador</string>
+
+    <!-- SERVICIO DOC SEGUN ESTABLECIMIENTO -->
+    <string name="toas_problem_o_sinRegistro_especialidadesconDoc">aun no se an registrado médicos a las especialidades, si esto persiste comuniquese con el administrador</string>
+    <string name="toas_problem_o_sinRegistro_doc">aun no se an registrado médicos, si esto persiste comuniquese con el administrador</string>
+    <string name="toas_problem_todoLosDoc">Problemas para mostrar médicos, comuníquese con el administrador</string>
+    <string name="toas_problem_DocXespecialidd">Problemas para mostrar médicos por especialidad, comuníquese con el administrador</string>
+
+    <!-- DOCFRAGMENT -->
+    <string name="dialog_internet_colegiatura">necesita Internet para verificar colegiatura</string>
+    <string name="link_colegioMedico">https://www.cmp-trujillo.org.pe/conoce-tu-medico</string>
+
+    <!-- ADAPTER LISTA DOCTOR -->
+    <string name="toas_presione">presione durante 2 segundos</string>
+
+    <!--dialogo contactame-->
+    <string name="icon_facebook">Facebook</string>
+    <string name="subTitle_name">Médico(a).</string>
+    <string name="subTitle_comunicasion">Contáctame</string>
+    <string name="permiso_llamada">No tiene permisos de llamada</string>
+    <!--cardView doctor-->
+    <string name="precio_consulta">Precio referencial (establecimiento): s/</string>
+    <string name="simbolo_sol">s/</string>
+    <string name="iniciales_rne">Rne:</string>
+    <string name="iniciales_cmp">Cmp:</string>
+    <string name="cmp_todo">Colegio Médico del Perú</string>
+    <string name="rne_todo">Registro Nacional de Especialista</string>
+    <string name="no_internet">no cuenta con internet</string>
+    <string name="instagran_ver">Mostrando Instagram</string>
+    <string name="facebook_ver">Mostrando Facebook</string>
+    <string name="instagran_error">problemas con la dirección de instagram, consulte con el Admin</string>
+    <string name="facebook_error">problemas con la dirección de facebook, consulte con el Admin</string>
+    <string name="error_internet_webColegioDeAbogads">se necesita Internet para verificar la colegiatura</string>
+    <!--sqlite-->
+    <string name="actualizar_no">no se pudo actualizar</string>
+    <!--mapa fragment-->
+    <string name="aviso_de_ubicación">Para mostrar la ruta, active su ubicación con el botón superior derecho y espere</string>
+    <string name="dato_yo">Tu ubicación</string>
+    <string name="fallo_de_conexion">Fallo de conexion..<b/>los servicios de esta app necesitan de Internet</string>
+    <string name="aviso_gps">el permiso de ubicación es para que la aplicación " +
+                "muestra un botón(mi ubicacion) y es para que " +
+                "se muestre su ubicación en el mapa (gracias a eso " +
+                "se podra mostrar la ruta de como llegar al " +
+                "establecimiento de salud seleccionado); si acepta, " +
+                "la aplicación no tendra acceso a activar o desactivar " +
+                "su GPS, solamente le avisara cuando se requiera para que usted lo active, \n" +
+                "por eso es necesario que acepte el " +
+                "permiso de acceso a la ubicacion de este dispositivo</string>
+    <!---->
+    <string name="cargar">Espere por favor</string>
+    <string name="null_establecimientos">No se encontraron establecimientos</string>
+    <string name="error_alcargar_establecimientos">Ups, vuelva a intentarlo</string>
+    <string name="sobrenombre_guardado">sobrenombre guardado</string>
+
+    <string name="whatap_admin">973408604</string>
+    <string name="email_admin">ilonecancer6@gmail.com</string>
+    <string name="descripcion_app">Aplicación que permite buscar establecimientos de salud públicos y privados de acuerdo a tu cercanía,
+    especialidad, así como también te brinda su información, de igual manera permite buscar médicos por nombre, apellido, especialidad
+    y contactar una cita.</string>
+    <!--progresbar dialogo- aviso de carga-->
+    <string name="progress_dialog_aviso">Espere por favor</string>
+</resources>

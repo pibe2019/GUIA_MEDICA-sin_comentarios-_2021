@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="guiasalud.estableciemtos.guiamedica.ui.maps.MapsFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_nav_home_to_establecimientoFragment2"
+            app:destination="@id/establecimientoFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="guiasalud.estableciemtos.guiamedica.ui.buscar.BuscarDocFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_buscar_doc" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="guiasalud.estableciemtos.guiamedica.ui.help.HelpFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/establecimientoFragment2"
+        android:name="guiasalud.estableciemtos.guiamedica.fragment.establecimientoFragment"
+        android:label="@string/nombre_fragmen_estableci"
+        tools:layout="@layout/fragment_establecimiento">
+        <action
+            android:id="@+id/action_establecimientoFragment2_to_especialiddsYDocFragment2"
+            app:destination="@id/especialiddsYDocFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/especialiddsYDocFragment"
+        android:name="guiasalud.estableciemtos.guiamedica.fragment.especialiddsYDocFragment"
+        android:label="@string/nombre_fragmen_especialiDoc"
+        tools:layout="@layout/fragment_especialidds_y_doc" />
+    <fragment
+        android:id="@+id/nav_adminEstablecimiento"
+        android:name="guiasalud.estableciemtos.guiamedica.ui.AdminEstablecimiento.webAdminFragment"
+        android:label="Administrador"
+        tools:layout="@layout/fragment_web_admin" />
+</navigation>

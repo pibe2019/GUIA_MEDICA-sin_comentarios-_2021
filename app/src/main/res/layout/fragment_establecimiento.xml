@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.establecimientoFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:id="@+id/loadingProgresBar"
+                        android:layout_gravity="center"
+                        style="?android:progressBarStyleLarge"/>
+
+                    <ImageView
+                        android:id="@+id/imageEstablecimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:contentDescription="@string/describir"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/filledTextField"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/nombreTitle"
+                            app:hintTextColor="@color/text_secondary_fondo_blanco"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginEnd="13dp"
+                            app:boxStrokeWidth="0dp"
+                            android:focusable="false"
+                            app:boxStrokeColor="@color/white">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtNombre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sindato"
+                                android:enabled="false"
+                                android:backgroundTint="@color/white"
+                                android:textColor="@color/black"
+                                android:gravity="center_horizontal"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        app:dividerInsetStart="16dp"
+                        app:dividerInsetEnd="16dp"
+                        android:background="@color/acentuacion_rosa_A700"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tipoTitle"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtTipo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sindato"
+                                android:enabled="false"
+                                android:backgroundTint="@color/white"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llNuAtencion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/numEmergenciaTIL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/numEmergenciaTitle"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtNumEmergencia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?attr/selectableItemBackground"
+                                android:drawablePadding="20dp"
+                                android:focusableInTouchMode="false"
+                                android:text="@string/sindatoNumero"
+                                android:textColor="@color/black"
+                                android:textColorLink="@color/text_primary_fondo_blanco"
+                                android:textIsSelectable="false"
+                                android:cursorVisible="false"
+                                app:drawableStartCompat="@drawable/ic_baseline_phone_24" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/numeroAtencionTitle"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtNumeroAtencion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?attr/selectableItemBackground"
+                                android:cursorVisible="false"
+                                android:drawablePadding="20dp"
+                                android:focusableInTouchMode="false"
+                                android:text="@string/sindatoNumero"
+                                android:textColor="@color/black"
+                                android:textColorLink="@color/text_primary_fondo_blanco"
+                                android:textIsSelectable="false"
+                                android:outlineProvider="none"
+                                app:drawableStartCompat="@drawable/ic_baseline_phone_24" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWhatssap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/WhatssapTitle"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtWhatssap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?attr/selectableItemBackground"
+                                android:drawablePadding="20dp"
+                                android:focusableInTouchMode="false"
+                                android:cursorVisible="false"
+                                android:text="@string/WhatssapTitle"
+                                android:textColor="@color/black"
+                                android:textColorLink="@color/text_primary_fondo_blanco"
+                                app:drawableStartCompat="@drawable/ic_whatsapp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/correoTitle"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtCorreo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?attr/selectableItemBackground"
+                                android:drawablePadding="20dp"
+                                android:focusableInTouchMode="false"
+                                android:text="@string/correoTitle"
+                                android:textColor="@color/black"
+                                android:textColorLink="@color/text_primary_fondo_blanco"
+                                app:drawableStartCompat="@drawable/ic_baseline_email_24"
+                                android:cursorVisible="false"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llLicencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/licenciaTitle"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtLicencia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawablePadding="20dp"
+                                android:focusableInTouchMode="false"
+                                android:enabled="false"
+                                android:text="@string/licenciaTitle"
+                                android:textColor="@color/black"
+                                android:textColorLink="@color/text_primary_fondo_blanco"
+                                app:drawableStartCompat="@drawable/ic_baseline_verified_24" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/direccionTitle"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDireccion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawablePadding="20dp"
+                                android:focusableInTouchMode="false"
+                                android:enabled="false"
+                                android:text="@string/direccionTitle"
+                                android:textColor="@color/black"
+                                android:textColorLink="@color/text_primary_fondo_blanco"
+                                app:drawableStartCompat="@drawable/ic_baseline_directions_24" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:dividerInsetStart="16dp"
+                        app:dividerInsetEnd="16dp"
+                        android:background="@color/acentuacion_rosa_A700"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/descripcionTitle"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDescripcion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:focusableInTouchMode="false"
+                                android:enabled="false"
+                                android:text="@string/descripcionTitle"
+                                android:textColor="@color/black"
+                                android:textColorLink="@color/text_primary_fondo_blanco" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:id="@+id/textEspeDoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/especialidades_doctores"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="end">
+                            <pl.droidsonroids.gif.GifImageButton
+                                android:id="@+id/flechaIcono"
+                                android:padding="0dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="40dp"
+                                android:layout_height="20dp"
+                                android:contentDescription="@string/icono_mas"
+                                android:scaleType="fitXY"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/flechaderecha"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal">
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imgButtonWeb"
+                                android:background="@drawable/ic_webdesign"
+                                android:contentDescription="@string/img_pageweb"/>
+                            <TextView
+                                android:id="@+id/idPaginawebbutom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/btn_pagewebEstablecimiento"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+                                <ImageButton
+                                    android:padding="1dp"
+                                    android:id="@+id/btnFacebook"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_facebookoriginal"
+                                    android:contentDescription="@string/img_facebook"/>
+                                <TextView
+                                    android:layout_marginTop="2.5dp"
+                                    android:id="@+id/idFacebookbutom"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/btn_facebookEstablecimiento"
+                                    android:textSize="12sp"/>
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+</ScrollView>
